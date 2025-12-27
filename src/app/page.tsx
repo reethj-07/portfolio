@@ -1,3 +1,5 @@
+import ProjectCard from "@/components/ProjectCard";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white px-6 py-12">
