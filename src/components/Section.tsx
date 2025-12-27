@@ -4,9 +4,14 @@ import { motion } from "framer-motion";
 
 // Define animation locally to avoid import errors
 const fadeUp = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0 },
+  hidden: { opacity: 0, y: 16 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { ease: "easeOut" },
+  },
 };
+
 
 export default function Section({
   title,

@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 type ProjectCardProps = {
   title: string;
@@ -14,9 +17,15 @@ export default function ProjectCard({
   href,
 }: ProjectCardProps) {
   return (
-    <div className="group rounded-xl border border-gray-800 bg-zinc-900 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-gray-600 hover:shadow-lg">
-      
-      <h3 className="text-lg font-semibold mb-2 group-hover:text-blue-400 transition">
+    <motion.div
+      whileHover={{ y: -6 }}
+      transition={{ type: "spring", stiffness: 300, damping: 20 }}
+      className="group rounded-xl border border-gray-800 bg-zinc-900 p-6
+                 hover:border-blue-500/40 hover:shadow-lg
+                 transition-colors"
+    >
+      <h3 className="text-lg font-semibold mb-2
+                     group-hover:text-blue-400 transition">
         {title}
       </h3>
 
@@ -28,7 +37,10 @@ export default function ProjectCard({
         {tech.map((t) => (
           <span
             key={t}
-            className="text-xs px-2 py-1 rounded-md bg-gray-800 text-gray-300"
+            className="text-xs px-2 py-1 rounded-md
+                       bg-gray-800 text-gray-300
+                       border border-gray-700
+                       group-hover:border-blue-500/40 transition"
           >
             {t}
           </span>
@@ -37,10 +49,11 @@ export default function ProjectCard({
 
       <Link
         href={href}
-        className="inline-block text-sm text-blue-400 hover:underline"
+        className="inline-block text-sm text-blue-400
+                   hover:underline underline-offset-4"
       >
         View Case Study →
       </Link>
-    </div>
+    </motion.div>
   );
 }

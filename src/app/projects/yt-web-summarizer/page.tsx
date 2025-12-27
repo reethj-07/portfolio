@@ -1,29 +1,45 @@
+import Diagram from "@/components/Diagram";
+import Section from "@/components/Section";
+
 export default function YTWebSummarizer() {
   return (
-    <main className="min-h-screen bg-black text-white px-6 py-10">
-      <div className="max-w-3xl mx-auto space-y-8">
+    <main className="min-h-screen bg-black text-white px-6 py-12">
+      <div className="max-w-4xl mx-auto space-y-12">
 
         <h1 className="text-3xl font-bold">
           GenAI-Based YouTube & Web Summarizer
         </h1>
 
-        <p className="text-gray-400 text-sm">
-          Summarizes long-form videos and web content using Whisper and LLMs.
+        <p className="text-gray-400 max-w-2xl">
+          A GenAI system that converts long-form videos and articles
+          into concise summaries.
         </p>
 
-        <ul className="list-disc list-inside text-gray-400 space-y-2 text-sm">
-          <li>Audio extraction and transcription using Whisper</li>
-          <li>Chunked summarization via LangChain pipelines</li>
-          <li>GPU/CPU-aware inference for performance optimization</li>
-        </ul>
+        <Diagram
+          src="/diagrams/yt-web-summarizer-architecture.png"
+          alt="YouTube and web summarization pipeline"
+        />
 
-        <a
-          href="https://github.com/reethj-07/yt-web-summarizer"
-          target="_blank"
-          className="text-blue-400 hover:underline text-sm"
-        >
-          GitHub Repository →
-        </a>
+        <Section title="Pipeline Design">
+          <ul className="list-disc list-inside space-y-1">
+            <li>Audio extraction from YouTube</li>
+            <li>Whisper-based transcription</li>
+            <li>Chunked summarization via LangChain</li>
+          </ul>
+        </Section>
+
+        <Section title="Optimization">
+          GPU/CPU-aware inference dynamically adjusts processing
+          based on hardware availability.
+        </Section>
+
+        <Section title="Key Learnings">
+          <ul className="list-disc list-inside space-y-1">
+            <li>Chunk size affects coherence</li>
+            <li>Transcription quality propagates errors</li>
+            <li>Latency must be controlled for UX</li>
+          </ul>
+        </Section>
 
       </div>
     </main>
