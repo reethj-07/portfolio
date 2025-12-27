@@ -1,17 +1,21 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 
-// Define animation locally to avoid import errors
-const fadeUp = {
-  hidden: { opacity: 0, y: 16 },
+const fadeUp: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 16,
+  },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { ease: "easeOut" },
+    transition: {
+      duration: 0.5,
+      ease: [0.16, 1, 0.3, 1], // ✅ valid easing
+    },
   },
 };
-
 
 export default function Section({
   title,
@@ -25,8 +29,7 @@ export default function Section({
       variants={fadeUp}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true }}
-      transition={{ duration: 0.5 }}
+      viewport={{ once: true, margin: "-80px" }}
       className="space-y-6"
     >
       {title && (
