@@ -1,4 +1,5 @@
 import ProjectCard from "@/components/ProjectCard";
+import Badge from "@/components/Badge";
 
 export default function Home() {
   return (
@@ -40,32 +41,53 @@ export default function Home() {
           <div className="space-y-10">
 
             <div>
-              <h3 className="text-lg font-medium">
-                Data Science Intern <span className="text-gray-400">· PocketFM</span>
-              </h3>
-              <p className="text-sm text-gray-500 mb-3">May 2025 – July 2025</p>
+  <h3 className="text-lg font-medium">
+    Data Science Intern
+    <span className="text-gray-400"> · PocketFM</span>
+  </h3>
 
-              <ul className="list-disc list-inside text-gray-400 space-y-1 text-sm">
-                <li>Built scalable pipelines on user behavior logs to surface early churn signals.</li>
-                <li>Segmented 2M+ users using clustering for personalization and churn risk modeling.</li>
-                <li>Developed NLP-based sentiment analysis on 50K+ reviews to extract insights.</li>
-                <li>Evaluated A/B experiments using CTR, sessions, and impressions.</li>
-              </ul>
-            </div>
+  <div className="flex flex-wrap gap-2 mt-2 mb-2">
+    <Badge label="Churn Modeling" />
+    <Badge label="Sentiment Analysis" />
+    <Badge label="Clustering" />
+    <Badge label="NLP" />
+    <Badge label="A/B Testing" />
+  </div>
 
+  <p className="text-sm text-gray-500 mb-2">May 2025 – July 2025</p>
+
+  <ul className="list-disc list-inside text-gray-400 space-y-1">
+    <li>Built scalable pipelines on user behavior logs to surface early churn signals.</li>
+    <li>Segmented 2M+ users using clustering for personalization and churn risk modeling.</li>
+    <li>Developed NLP-based sentiment analysis on 50K+ reviews to extract content insights.</li>
+    <li>Evaluated A/B experiments using CTR, sessions, and impressions.</li>
+  </ul>
+</div>
+
+{/* INTERN */}          
             <div>
-              <h3 className="text-lg font-medium">
-                Data Analyst Intern <span className="text-gray-400">· Paragon</span>
-              </h3>
-              <p className="text-sm text-gray-500 mb-3">Dec 2024 – Jan 2025</p>
+  <h3 className="text-lg font-medium">
+    Data Analyst Intern
+    <span className="text-gray-400"> · Paragon</span>
+  </h3>
 
-              <ul className="list-disc list-inside text-gray-400 space-y-1 text-sm">
-                <li>Cleaned and standardized multi-source sales data using SQL.</li>
-                <li>Performed EDA to identify trends, bottlenecks, and customer behavior.</li>
-                <li>Built optimized SQL queries and KPI tables for dashboards.</li>
-                <li>Applied clustering for customer segmentation.</li>
-              </ul>
-            </div> 
+  <div className="flex flex-wrap gap-2 mt-2 mb-2">
+    <Badge label="SQL" />
+    <Badge label="EDA" />
+    <Badge label="Dashboards" />
+    <Badge label="Customer Segmentation" />
+  </div>
+
+  <p className="text-sm text-gray-500 mb-2">Dec 2024 – Jan 2025</p>
+
+  <ul className="list-disc list-inside text-gray-400 space-y-1">
+    <li>Cleaned and standardized multi-source sales data using SQL.</li>
+    <li>Performed EDA to identify trends, bottlenecks, and customer behavior.</li>
+    <li>Built optimized SQL queries and KPI tables for dashboards.</li>
+    <li>Applied clustering for customer segmentation.</li>
+  </ul>
+</div>
+
 
           </div>
         </section>
