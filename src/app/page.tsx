@@ -12,8 +12,7 @@ export default function Home() {
           </h1>
 
           <p className="text-lg text-gray-400 max-w-2xl">
-            Building end-to-end Machine Learning and Generative AI systems —
-            from data pipelines and modeling to deployment and evaluation.
+          Building end-to-end Machine Learning and Generative AI systems, with a focus on practical problem-solving, strong evaluation, and real-world deployment.
           </p>
 
           <div className="flex gap-5 text-sm">
@@ -66,7 +65,7 @@ export default function Home() {
                 <li>Built optimized SQL queries and KPI tables for dashboards.</li>
                 <li>Applied clustering for customer segmentation.</li>
               </ul>
-            </div>
+            </div> 
 
           </div>
         </section>
