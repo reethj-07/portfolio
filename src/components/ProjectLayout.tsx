@@ -12,16 +12,16 @@ export default function ProjectLayout({
   children: React.ReactNode;
 }) {
   return (
-    <main className="min-h-screen bg-black text-white px-6 py-12">
-      <div className="max-w-4xl mx-auto space-y-14">
+    <main className="min-h-screen bg-black text-white px-6 py-14">
+      <div className="max-w-4xl mx-auto space-y-16">
 
         {/* HEADER */}
-        <section className="space-y-4">
+        <section className="space-y-5">
           <h1 className="text-3xl md:text-4xl font-bold tracking-tight">
             {title}
           </h1>
 
-          <p className="text-gray-400 max-w-2xl">
+          <p className="text-gray-400 max-w-2xl leading-relaxed">
             {description}
           </p>
 
@@ -32,8 +32,11 @@ export default function ProjectLayout({
           </div>
         </section>
 
+        {/* DIVIDER */}
+        <div className="h-px bg-gradient-to-r from-transparent via-gray-800 to-transparent" />
+
         {/* CONTENT */}
-        <section className="space-y-12">
+        <section className="space-y-14">
           {children}
         </section>
 

@@ -25,19 +25,23 @@ export default function Section({
   children: React.ReactNode;
 }) {
   return (
-    <motion.section
-      variants={fadeUp}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, margin: "-80px" }}
-      className="space-y-6"
-    >
-      {title && (
-        <h2 className="text-2xl font-semibold border-b border-gray-800 pb-2">
-          {title}
-        </h2>
-      )}
+  <motion.section
+    variants={fadeUp}
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true, margin: "-80px" }}
+    className="space-y-6"
+  >
+    {title && (
+      <h2 className="text-xl md:text-2xl font-semibold tracking-tight
+                     border-b border-gray-800 pb-3">
+        {title}
+      </h2>
+    )}
+
+    <div className="text-gray-400 text-sm leading-relaxed">
       {children}
-    </motion.section>
-  );
+    </div>
+  </motion.section>
+);
 }

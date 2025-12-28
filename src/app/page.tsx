@@ -155,7 +155,7 @@ export default function Home() {
                 "NLP", "Transformers", "RAG", "LangChain", "FAISS", "Whisper",
                 "MLOps", "Docker", "GitHub Actions",
                 "EDA", "A/B Testing", "Clustering",
-                "FastAPI", "Flask", "Streamlit", "GCP (Basics)",
+                "FastAPI", "Flask", "Streamlit", "GCP",
               ].map((skill) => (
                 <span
                   key={skill}
