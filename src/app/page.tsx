@@ -16,7 +16,7 @@ export default function Home() {
 
             <p className="text-lg text-gray-400 max-w-2xl">
               Aspiring Machine Learning & Generative AI Engineer focused on
-              building end-to-end, data-driven systems — from problem formulation
+              building end-to-end, data-driven systems from problem formulation
               and modeling to evaluation and real-world deployment.
             </p>
 
