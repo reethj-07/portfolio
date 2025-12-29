@@ -27,7 +27,8 @@ export default function EmotionMusicRecommender() {
       <Diagram
         src="/diagrams/emotion-music-architecture.png"
         alt="Emotion-aware music recommendation pipeline"
-        caption="Multi-modal emotion inference pipeline combining face, voice, and text signals for playlist generation."
+        title="System Architecture"
+        description="Multi-modal emotion inference pipeline combining face, voice, and text signals for playlist generation."
       />
 
       <Section title="Modeling Approach">
