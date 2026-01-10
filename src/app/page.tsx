@@ -153,7 +153,7 @@ export default function Home() {
                 "Machine Learning", "Deep Learning",
                 "PyTorch", "TensorFlow", "Scikit-learn",
                 "NLP", "Transformers", "RAG", "LangChain", "FAISS", "Whisper",
-                "MLOps", "Docker", "GitHub Actions",
+                "MLOps", "Docker","Kubernetes" , "GitHub Actions",
                 "EDA", "A/B Testing", "Clustering",
                 "FastAPI", "Flask", "Streamlit", "GCP",
               ].map((skill) => (
