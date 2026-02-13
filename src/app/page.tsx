@@ -1,6 +1,9 @@
+"use client";
+
 import FadeIn from "@/components/motion/FadeIn";
 import ProjectCard from "@/components/ProjectCard";
 import Badge from "@/components/Badge";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -9,24 +12,86 @@ export default function Home() {
 
         {/* ================= HERO ================= */}
         <FadeIn>
-          <section className="space-y-6">
-            <div className="space-y-2">
-              <h1 className="text-5xl md:text-6xl font-bold tracking-tight bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
-                Reeth Jain
-              </h1>
-              <p className="text-xl md:text-2xl font-semibold text-blue-400">
-                ML Engineer | GenAI & Agentic AI Systems | MLOps
-              </p>
+          <section className="relative space-y-6 overflow-hidden">
+            {/* Animated Background Orbs */}
+            <div className="absolute inset-0 -z-10">
+              <motion.div
+                animate={{
+                  scale: [1, 1.2, 1],
+                  opacity: [0.3, 0.5, 0.3],
+                }}
+                transition={{
+                  duration: 8,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+                className="absolute top-0 left-0 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl"
+              />
+              <motion.div
+                animate={{
+                  scale: [1, 1.3, 1],
+                  opacity: [0.2, 0.4, 0.2],
+                }}
+                transition={{
+                  duration: 10,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: 1,
+                }}
+                className="absolute top-20 right-0 w-80 h-80 bg-cyan-500/20 rounded-full blur-3xl"
+              />
+              <motion.div
+                animate={{
+                  scale: [1, 1.1, 1],
+                  opacity: [0.25, 0.45, 0.25],
+                }}
+                transition={{
+                  duration: 12,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: 2,
+                }}
+                className="absolute -bottom-20 left-1/3 w-72 h-72 bg-purple-500/15 rounded-full blur-3xl"
+              />
             </div>
 
-            <p className="text-base md:text-lg text-gray-300 max-w-3xl leading-relaxed">
-              Building production-grade AI systems with focus on <span className="text-white font-medium">Large Language Models</span>, 
-              <span className="text-white font-medium"> Retrieval-Augmented Generation</span>, and 
-              <span className="text-white font-medium"> autonomous agent frameworks</span>. 
-              Experienced in deploying scalable ML infrastructure from research to production.
-            </p>
+            <div className="space-y-2 relative">
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="text-5xl md:text-6xl font-bold tracking-tight bg-gradient-to-r from-white via-blue-100 to-cyan-200 bg-clip-text text-transparent"
+              >
+                Reeth Jain
+              </motion.h1>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="text-xl md:text-2xl font-semibold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent"
+              >
+                ML Engineer | GenAI & Agentic AI Systems | MLOps
+              </motion.p>
+            </div>
 
-            <div className="flex flex-wrap gap-4 pt-2">
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="text-base md:text-lg text-gray-300 max-w-3xl leading-relaxed relative"
+            >
+              Building production-grade AI systems with focus on <span className="text-white font-medium">Large Language Models</span>,
+              <span className="text-white font-medium"> Retrieval-Augmented Generation</span>, and
+              <span className="text-white font-medium"> autonomous agent frameworks</span>.
+              Experienced in deploying scalable ML infrastructure from research to production.
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              className="flex flex-wrap gap-4 pt-2"
+            >
               <a
                 href="https://github.com/reethj-07"
                 target="_blank"
@@ -62,7 +127,7 @@ export default function Home() {
                 </svg>
                 Email
               </a>
-            </div>
+            </motion.div>
           </section>
         </FadeIn>
 
@@ -213,16 +278,21 @@ export default function Home() {
                   AI/ML Frameworks & Libraries
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {["Python", "PyTorch", "TensorFlow", "Scikit-learn", "HuggingFace", "OpenCV", "NumPy", "Pandas"].map((skill) => (
-                    <span
+                  {["Python", "PyTorch", "TensorFlow", "Scikit-learn", "HuggingFace", "OpenCV", "NumPy", "Pandas"].map((skill, index) => (
+                    <motion.span
                       key={skill}
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.3, delay: index * 0.05 }}
+                      whileHover={{ scale: 1.1, y: -2 }}
                       className="px-3 py-1.5 rounded-lg border border-gray-700
-                                 bg-gradient-to-br from-gray-800 to-gray-900 
+                                 bg-gradient-to-br from-gray-800 to-gray-900
                                  hover:border-blue-500/50 hover:from-gray-700 hover:to-gray-800
-                                 text-sm text-gray-200 transition-all duration-300"
+                                 text-sm text-gray-200 transition-all duration-300 cursor-default"
                     >
                       {skill}
-                    </span>
+                    </motion.span>
                   ))}
                 </div>
               </div>
@@ -233,16 +303,21 @@ export default function Home() {
                   LLM & GenAI Tools
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {["LangChain", "LangGraph", "LlamaIndex", "OpenAI API", "Mistral", "RAG", "FAISS", "Whisper", "LoRA/QLoRA", "Phi-3"].map((skill) => (
-                    <span
+                  {["LangChain", "LangGraph", "LlamaIndex", "OpenAI API", "Mistral", "RAG", "FAISS", "Whisper", "LoRA/QLoRA", "Phi-3"].map((skill, index) => (
+                    <motion.span
                       key={skill}
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.3, delay: index * 0.05 }}
+                      whileHover={{ scale: 1.1, y: -2 }}
                       className="px-3 py-1.5 rounded-lg border border-gray-700
-                                 bg-gradient-to-br from-gray-800 to-gray-900 
+                                 bg-gradient-to-br from-gray-800 to-gray-900
                                  hover:border-blue-500/50 hover:from-gray-700 hover:to-gray-800
-                                 text-sm text-gray-200 transition-all duration-300"
+                                 text-sm text-gray-200 transition-all duration-300 cursor-default"
                     >
                       {skill}
-                    </span>
+                    </motion.span>
                   ))}
                 </div>
               </div>
@@ -253,16 +328,21 @@ export default function Home() {
                   Backend & APIs
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {["FastAPI", "Flask", "Streamlit", "SQL", "PostgreSQL", "Redis"].map((skill) => (
-                    <span
+                  {["FastAPI", "Flask", "Streamlit", "SQL", "PostgreSQL", "Redis"].map((skill, index) => (
+                    <motion.span
                       key={skill}
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.3, delay: index * 0.05 }}
+                      whileHover={{ scale: 1.1, y: -2 }}
                       className="px-3 py-1.5 rounded-lg border border-gray-700
-                                 bg-gradient-to-br from-gray-800 to-gray-900 
+                                 bg-gradient-to-br from-gray-800 to-gray-900
                                  hover:border-blue-500/50 hover:from-gray-700 hover:to-gray-800
-                                 text-sm text-gray-200 transition-all duration-300"
+                                 text-sm text-gray-200 transition-all duration-300 cursor-default"
                     >
                       {skill}
-                    </span>
+                    </motion.span>
                   ))}
                 </div>
               </div>
@@ -273,16 +353,21 @@ export default function Home() {
                   DevOps & Cloud Infrastructure
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {["Docker", "Kubernetes", "Terraform", "Helm", "GitHub Actions", "AWS", "Azure", "GCP"].map((skill) => (
-                    <span
+                  {["Docker", "Kubernetes", "Terraform", "Helm", "GitHub Actions", "AWS", "Azure", "GCP"].map((skill, index) => (
+                    <motion.span
                       key={skill}
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.3, delay: index * 0.05 }}
+                      whileHover={{ scale: 1.1, y: -2 }}
                       className="px-3 py-1.5 rounded-lg border border-gray-700
-                                 bg-gradient-to-br from-gray-800 to-gray-900 
+                                 bg-gradient-to-br from-gray-800 to-gray-900
                                  hover:border-blue-500/50 hover:from-gray-700 hover:to-gray-800
-                                 text-sm text-gray-200 transition-all duration-300"
+                                 text-sm text-gray-200 transition-all duration-300 cursor-default"
                     >
                       {skill}
-                    </span>
+                    </motion.span>
                   ))}
                 </div>
               </div>
@@ -293,16 +378,21 @@ export default function Home() {
                   MLOps & Observability
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {["MLflow", "DVC", "Airflow", "Kafka", "Prometheus", "Grafana", "OpenTelemetry", "Sentry"].map((skill) => (
-                    <span
+                  {["MLflow", "DVC", "Airflow", "Kafka", "Prometheus", "Grafana", "OpenTelemetry", "Sentry"].map((skill, index) => (
+                    <motion.span
                       key={skill}
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.3, delay: index * 0.05 }}
+                      whileHover={{ scale: 1.1, y: -2 }}
                       className="px-3 py-1.5 rounded-lg border border-gray-700
-                                 bg-gradient-to-br from-gray-800 to-gray-900 
+                                 bg-gradient-to-br from-gray-800 to-gray-900
                                  hover:border-blue-500/50 hover:from-gray-700 hover:to-gray-800
-                                 text-sm text-gray-200 transition-all duration-300"
+                                 text-sm text-gray-200 transition-all duration-300 cursor-default"
                     >
                       {skill}
-                    </span>
+                    </motion.span>
                   ))}
                 </div>
               </div>
@@ -313,16 +403,21 @@ export default function Home() {
                   Development & Analysis
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {["Git", "Jupyter", "VS Code", "C++", "EDA", "A/B Testing", "Clustering", "NLP", "Computer Vision"].map((skill) => (
-                    <span
+                  {["Git", "Jupyter", "VS Code", "C++", "EDA", "A/B Testing", "Clustering", "NLP", "Computer Vision"].map((skill, index) => (
+                    <motion.span
                       key={skill}
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.3, delay: index * 0.05 }}
+                      whileHover={{ scale: 1.1, y: -2 }}
                       className="px-3 py-1.5 rounded-lg border border-gray-700
-                                 bg-gradient-to-br from-gray-800 to-gray-900 
+                                 bg-gradient-to-br from-gray-800 to-gray-900
                                  hover:border-blue-500/50 hover:from-gray-700 hover:to-gray-800
-                                 text-sm text-gray-200 transition-all duration-300"
+                                 text-sm text-gray-200 transition-all duration-300 cursor-default"
                     >
                       {skill}
-                    </span>
+                    </motion.span>
                   ))}
                 </div>
               </div>

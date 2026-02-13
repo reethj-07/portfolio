@@ -1,6 +1,7 @@
 import ProjectLayout from "@/components/ProjectLayout";
 import Section from "@/components/Section";
 import SkillBadge from "@/components/SkillBadge";
+import Diagram from "@/components/Diagram";
 
 export default function YTWebSummarizer() {
   return (
@@ -97,6 +98,16 @@ export default function YTWebSummarizer() {
             </p>
           </div>
         </div>
+      </Section>
+
+      {/* System Architecture */}
+      <Section title="System Architecture">
+        <Diagram
+          src="/diagrams/yt-web-summarizer-architecture.png"
+          alt="YT Web Summarizer System Architecture"
+          title="Complete System Flow"
+          description="End-to-end pipeline from YouTube/Web input to AI-powered summarization with caching and export"
+        />
       </Section>
 
       {/* Summary Styles */}
