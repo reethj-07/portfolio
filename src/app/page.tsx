@@ -177,45 +177,46 @@ export default function Home() {
                 </ul>
               </div>
 
-              {/* PocketFM */}
+              {/* Xelron.ai */}
               <div className="border border-gray-800 rounded-xl p-6 hover:border-gray-700 transition-all bg-gradient-to-br from-gray-900/50 to-black/50">
                 <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-4">
                   <div>
                     <h3 className="text-xl font-semibold text-white">
-                      Data Science Intern
+                      AI SDE Intern
                     </h3>
-                    <p className="text-blue-400 font-medium">PocketFM</p>
+                    <p className="text-blue-400 font-medium">Xelron.ai</p>
                   </div>
                   <span className="text-sm text-gray-400 md:text-right">
-                    May 2025 – July 2025
+                    Feb 2025 – March 2025
                   </span>
                 </div>
 
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <Badge label="Churn Modeling" />
-                  <Badge label="Sentiment Analysis" />
-                  <Badge label="Clustering" />
-                  <Badge label="NLP" />
-                  <Badge label="A/B Testing" />
+                  <Badge label="AI Agents" />
+                  <Badge label="Benchmarking" />
+                  <Badge label="Docker" />
+                  <Badge label="pytest" />
+                  <Badge label="TOML" />
+                  <Badge label="JSON Specs" />
                   <Badge label="Python" />
                 </div>
 
                 <ul className="space-y-2 text-gray-300">
                   <li className="flex gap-3">
                     <span className="text-blue-400 mt-1">▹</span>
-                    <span>Developed churn prediction models on large-scale user behavior data to identify early warning signals and reduce attrition rates</span>
+                    <span>Built 15+ production AI agent benchmarks using Docker, pytest, and TOML to enable reproducible Harbor evaluation</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-blue-400 mt-1">▹</span>
-                    <span>Implemented clustering algorithms for user segmentation, enabling personalized content recommendations and targeted retention strategies</span>
+                    <span>Automated validation with 11 quality gates, reducing inconsistencies and ensuring deterministic evaluation outcomes</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-blue-400 mt-1">▹</span>
-                    <span>Built end-to-end sentiment analysis pipelines to extract actionable insights from user reviews and content feedback</span>
+                    <span>Standardized task schemas with JSON specs and edge-case coverage to improve reproducibility and auditability</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-blue-400 mt-1">▹</span>
-                    <span>Collaborated with product teams on A/B testing analysis, measuring impact of feature releases on key engagement metrics</span>
+                    <span>Delivered multi-domain benchmark suites spanning ML, data processing, security, and scientific computing workflows</span>
                   </li>
                 </ul>
               </div>
@@ -303,7 +304,7 @@ export default function Home() {
                   LLM & GenAI Tools
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {["LangChain", "LangGraph", "LlamaIndex", "OpenAI API", "Mistral", "RAG", "FAISS", "Whisper", "LoRA/QLoRA", "Phi-3"].map((skill, index) => (
+                  {["LangChain", "LangGraph", "LlamaIndex", "OpenAI API", "Mistral", "RAG", "FAISS", "Whisper", "LoRA/QLoRA", "Phi-3", "AI Agents"].map((skill, index) => (
                     <motion.span
                       key={skill}
                       initial={{ opacity: 0, scale: 0.8 }}
@@ -353,7 +354,7 @@ export default function Home() {
                   DevOps & Cloud Infrastructure
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {["Docker", "Kubernetes", "Terraform", "Helm", "GitHub Actions", "AWS", "Azure", "GCP"].map((skill, index) => (
+                  {["Docker", "Kubernetes", "Terraform", "Helm", "GitHub Actions", "AWS", "Azure", "GCP", "TOML"].map((skill, index) => (
                     <motion.span
                       key={skill}
                       initial={{ opacity: 0, scale: 0.8 }}
@@ -378,7 +379,7 @@ export default function Home() {
                   MLOps & Observability
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {["MLflow", "DVC", "Airflow", "Kafka", "Prometheus", "Grafana", "OpenTelemetry", "Sentry"].map((skill, index) => (
+                  {["MLflow", "DVC", "Airflow", "Kafka", "Prometheus", "Grafana", "OpenTelemetry", "Sentry", "Benchmarking", "Deterministic Evaluation"].map((skill, index) => (
                     <motion.span
                       key={skill}
                       initial={{ opacity: 0, scale: 0.8 }}
@@ -403,7 +404,7 @@ export default function Home() {
                   Development & Analysis
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {["Git", "Jupyter", "VS Code", "C++", "EDA", "A/B Testing", "Clustering", "NLP", "Computer Vision"].map((skill, index) => (
+                  {["Git", "Jupyter", "VS Code", "C++", "JSON", "pytest", "NLP", "Computer Vision", "Edge-Case Testing"].map((skill, index) => (
                     <motion.span
                       key={skill}
                       initial={{ opacity: 0, scale: 0.8 }}
@@ -443,7 +444,7 @@ export default function Home() {
 
             <div className="flex flex-col sm:flex-row justify-center gap-4 pt-4">
               <a
-                href="/AIML.pdf"
+                href="/AIML_latest.pdf"
                 download
                 className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 
                            hover:from-blue-500 hover:to-blue-600 rounded-lg
