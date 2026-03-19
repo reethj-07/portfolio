@@ -149,7 +149,7 @@ export default function Home() {
                     <p className="text-blue-400 font-medium">Hello agentic.ai</p>
                   </div>
                   <span className="text-sm text-gray-400 md:text-right">
-                    Jan 2026 – Present
+                    Dec 2025 – Feb 2026
                   </span>
                 </div>
 
@@ -164,15 +164,19 @@ export default function Home() {
                 <ul className="space-y-2 text-gray-300">
                   <li className="flex gap-3">
                     <span className="text-blue-400 mt-1">▹</span>
-                    <span>Developing advanced agentic AI systems using LangGraph for autonomous task execution and multi-agent orchestration</span>
+                    <span>Designed and developed agentic AI systems with LangGraph state-machine workflows, enabling autonomous task decomposition, planning, and coordinated multi-agent execution</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-blue-400 mt-1">▹</span>
-                    <span>Building intelligent workflows that enable AI agents to solve complex problems with planning, memory, and tool integration</span>
+                    <span>Built robust tool-augmented pipelines integrating memory, retrieval, and external APIs so agents could handle complex multi-step tasks with better context retention and decision quality</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-blue-400 mt-1">▹</span>
-                    <span>Implementing production-ready agent systems focusing on reliability, safety, and scalable deployment</span>
+                    <span>Implemented production-focused reliability patterns including structured error handling, retries, guardrails, and fallback paths to improve safety and reduce workflow failure rates</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-blue-400 mt-1">▹</span>
+                    <span>Collaborated on deployment readiness by improving observability, evaluation loops, and maintainable Python module design for scalable agent operations</span>
                   </li>
                 </ul>
               </div>
@@ -187,7 +191,7 @@ export default function Home() {
                     <p className="text-blue-400 font-medium">Xelron.ai</p>
                   </div>
                   <span className="text-sm text-gray-400 md:text-right">
-                    Feb 2025 – March 2025
+                    Feb 2026 – March 2026 (Present)
                   </span>
                 </div>
 
@@ -204,19 +208,19 @@ export default function Home() {
                 <ul className="space-y-2 text-gray-300">
                   <li className="flex gap-3">
                     <span className="text-blue-400 mt-1">▹</span>
-                    <span>Built 15+ production AI agent benchmarks using Docker, pytest, and TOML to enable reproducible Harbor evaluation</span>
+                    <span>Built 15+ production-grade AI agent benchmarks using Dockerized environments, pytest suites, and TOML-driven configs to ensure reproducible Harbor evaluations across runs</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-blue-400 mt-1">▹</span>
-                    <span>Automated validation with 11 quality gates, reducing inconsistencies and ensuring deterministic evaluation outcomes</span>
+                    <span>Engineered an automated validation harness with 11 quality gates covering format checks, deterministic outputs, edge-case handling, and scoring consistency to reduce benchmark drift</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-blue-400 mt-1">▹</span>
-                    <span>Standardized task schemas with JSON specs and edge-case coverage to improve reproducibility and auditability</span>
+                    <span>Standardized task specifications with JSON schemas, explicit constraints, and adversarial edge-case definitions, significantly improving reproducibility, traceability, and auditability</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-blue-400 mt-1">▹</span>
-                    <span>Delivered multi-domain benchmark suites spanning ML, data processing, security, and scientific computing workflows</span>
+                    <span>Delivered benchmark packs across ML, data processing, security, and scientific-computing domains, expanding evaluation coverage and enabling more reliable cross-domain model comparisons</span>
                   </li>
                 </ul>
               </div>
