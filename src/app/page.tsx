@@ -139,6 +139,54 @@ export default function Home() {
             </h2>
 
             <div className="space-y-8">
+              {/* Deccan AI Experts */}
+              <div className="border border-gray-800 rounded-xl p-6 hover:border-gray-700 transition-all bg-gradient-to-br from-gray-900/50 to-black/50">
+                <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-4">
+                  <div>
+                    <h3 className="text-xl font-semibold text-white">
+                      AI/ML Expert
+                    </h3>
+                    <p className="text-blue-400 font-medium">Deccan AI Experts · Freelance</p>
+                    <p className="text-sm text-gray-400 mt-1">Hyderabad, Telangana, India · Remote</p>
+                  </div>
+                  <span className="text-sm text-gray-400 md:text-right">
+                    Mar 2026 – Present
+                  </span>
+                </div>
+
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <Badge label="LLM Evaluation" />
+                  <Badge label="RLHF" />
+                  <Badge label="SFT" />
+                  <Badge label="Prompt Engineering" />
+                  <Badge label="Model Alignment" />
+                  <Badge label="Benchmarking" />
+                </div>
+
+                <ul className="space-y-2 text-gray-300">
+                  <li className="flex gap-3">
+                    <span className="text-blue-400 mt-1">▹</span>
+                    <span>Focused on improving the reliability, alignment, and performance of large-scale AI systems through human-in-the-loop evaluation.</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-blue-400 mt-1">▹</span>
+                    <span>Contributed to LLM evaluation pipelines, including RLHF, response ranking, and preference modeling.</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-blue-400 mt-1">▹</span>
+                    <span>Curated datasets for supervised fine-tuning (SFT) and evaluation, including prompt-response pairs and edge cases.</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-blue-400 mt-1">▹</span>
+                    <span>Evaluated model outputs across factuality, reasoning, coherence, safety, and instruction adherence.</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-blue-400 mt-1">▹</span>
+                    <span>Applied prompt engineering to stress-test and improve model robustness while supporting benchmarking workflows with structured evaluation criteria and quality metrics.</span>
+                  </li>
+                </ul>
+              </div>
+
               {/* Hello Agentic.AI */}
               <div className="border border-gray-800 rounded-xl p-6 hover:border-gray-700 transition-all bg-gradient-to-br from-gray-900/50 to-black/50">
                 <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-4">
@@ -191,7 +239,7 @@ export default function Home() {
                     <p className="text-blue-400 font-medium">Xelron.ai</p>
                   </div>
                   <span className="text-sm text-gray-400 md:text-right">
-                    Feb 2026 – March 2026 (Present)
+                    Feb 2026 – Present
                   </span>
                 </div>
 
