@@ -27,7 +27,7 @@ export default function YTWebSummarizer() {
           YT Web Summarizer is an <span className="text-white font-medium">AI-powered summarization tool</span> that 
           transforms YouTube videos and web articles into concise, actionable summaries. Built with production-ready 
           Python and deployed on <span className="text-white font-medium">Hugging Face Spaces</span>, it features 
-          automatic transcription using OpenAI Whisper and intelligent summarization with Groq's Llama-3.3-70b model.
+          automatic transcription using OpenAI Whisper and intelligent summarization with Groq&apos;s Llama-3.3-70b model.
         </p>
         <p className="text-gray-300 leading-relaxed">
           The system includes <span className="text-white font-medium">smart caching to reduce API costs by ~70%</span>, 

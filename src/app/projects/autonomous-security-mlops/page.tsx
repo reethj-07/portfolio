@@ -79,7 +79,7 @@ export default function SecurityMLOpsPage() {
               Statistical A/B Testing
             </h3>
             <p className="text-gray-400 text-sm">
-              Two-proportion z-test, Welch's t-test, Mann-Whitney U test with sample size 
+              Two-proportion z-test, Welch&apos;s t-test, Mann-Whitney U test with sample size 
               calculation, power analysis, and experiment tracking.
             </p>
           </div>

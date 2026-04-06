@@ -286,6 +286,13 @@ export default function Home() {
             <div className="grid gap-6 md:grid-cols-2">
 
               <ProjectCard
+                title="AI Loyalty Service"
+                description="Agentic AI platform for real-time loyalty operations with LangGraph pipeline orchestration, RFM + KMeans segmentation, pgvector retrieval, and streaming reasoning traces."
+                tech={["LangGraph", "FastAPI", "Celery", "Redis", "pgvector", "OpenTelemetry"]}
+                href="/projects/ai-loyalty-service"
+              />
+
+              <ProjectCard
                 title="Autonomous Security MLOps Platform"
                 description="Enterprise-grade MLOps platform with 5 ensemble models, advanced monitoring, drift detection, and production-safe deployment infrastructure."
                 tech={["XGBoost", "MLflow", "Kubernetes", "Prometheus", "SHAP", "A/B Testing"]}
@@ -483,7 +490,7 @@ export default function Home() {
           <section className="text-center space-y-8 py-12">
             <div className="space-y-4">
               <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
-                Let's Build Something Impactful
+                Let&apos;s Build Something Impactful
               </h2>
 
               <p className="text-gray-300 max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
@@ -525,7 +532,7 @@ export default function Home() {
 
             <div className="pt-8 border-t border-gray-800">
               <p className="text-sm text-gray-500 italic">
-                "Building AI systems that scale from prototype to production"
+                &quot;Building AI systems that scale from prototype to production&quot;
               </p>
             </div>
           </section>

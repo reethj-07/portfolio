@@ -24,6 +24,15 @@ export default function ProjectsPage() {
 
           <FadeIn delay={0.1}>
             <ProjectCard
+              title="AI Loyalty Service"
+              description="Agentic customer-loyalty platform with LangGraph pipeline orchestration, RFM + KMeans dynamic segmentation, pgvector retrieval, and real-time WebSocket/SSE dashboard streaming."
+              tags={["LangGraph", "FastAPI", "Celery", "Redis", "pgvector", "OpenTelemetry"]}
+              link="/projects/ai-loyalty-service"
+            />
+          </FadeIn>
+
+          <FadeIn delay={0.15}>
+            <ProjectCard
               title="Autonomous Security MLOps Platform"
               description="Enterprise-grade MLOps platform with 5 ensemble models, advanced monitoring, drift detection, and production-safe deployment infrastructure with comprehensive documentation."
               tags={["MLOps", "XGBoost", "Kubernetes", "Prometheus", "SHAP", "A/B Testing"]}
@@ -31,7 +40,7 @@ export default function ProjectsPage() {
             />
           </FadeIn>
 
-          <FadeIn delay={0.15}>
+          <FadeIn delay={0.2}>
             <ProjectCard
               title="Hallucination-Aware Hybrid LLM System"
               description="Production-grade RAG system with Phi-3, FAISS retrieval, and strict context-grounding to prevent hallucinations. 86.7% retrieval accuracy with dual deployment modes (lightweight 20-50ms / full 100-500ms)."
@@ -40,7 +49,7 @@ export default function ProjectsPage() {
             />
           </FadeIn>
 
-          <FadeIn delay={0.2}>
+          <FadeIn delay={0.25}>
             <ProjectCard
               title="VibeTune: Multi-Modal Emotion Music Recommender"
               description="Real-time emotion detection from face, voice, and text with Spotify integration. ResNet50 + Wav2Vec2 + DistilRoBERTa for multi-modal analysis. Deployed with CI/CD, Docker, and comprehensive monitoring."
@@ -49,7 +58,7 @@ export default function ProjectsPage() {
             />
           </FadeIn>
 
-          <FadeIn delay={0.25}>
+          <FadeIn delay={0.3}>
             <ProjectCard
               title="YT Web Summarizer"
               description="AI-powered summarization tool using Whisper for transcription and LLMs for intelligent content summarization. 5 summary styles, smart caching (70% cost reduction), and production-ready Python architecture."

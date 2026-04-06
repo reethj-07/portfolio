@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="860" viewBox="0 0 1400 860" role="img" aria-labelledby="title desc">
+  <title id="title">AI Loyalty Service Architecture</title>
+  <desc id="desc">System flow showing dashboard, API, LangGraph nodes, data stores, async workers, and observability stack.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0f1a"/>
+      <stop offset="100%" stop-color="#020409"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0b1220"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#7dd3fc"/>
+    </marker>
+    <style>
+      .h1 { font: 700 30px 'Arial', sans-serif; fill: #e5f3ff; }
+      .h2 { font: 700 18px 'Arial', sans-serif; fill: #e2e8f0; }
+      .txt { font: 500 14px 'Arial', sans-serif; fill: #93c5fd; }
+      .sub { font: 500 13px 'Arial', sans-serif; fill: #9ca3af; }
+      .card { fill: url(#card); stroke: #243244; stroke-width: 2; rx: 14; }
+      .group { fill: #0b1322; stroke: #334155; stroke-width: 2; rx: 16; }
+      .edge { stroke: #7dd3fc; stroke-width: 2.2; fill: none; marker-end: url(#arrow); }
+      .edge2 { stroke: #60a5fa; stroke-width: 1.8; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1400" height="860" fill="url(#bg)"/>
+  <text x="56" y="58" class="h1">AI Loyalty Service: Agentic System Architecture</text>
+
+  <rect x="42" y="86" width="1316" height="734" class="group"/>
+
+  <rect x="84" y="132" width="250" height="96" class="card"/>
+  <text x="104" y="165" class="h2">React Dashboard</text>
+  <text x="104" y="189" class="sub">Live KPI panels</text>
+  <text x="104" y="209" class="sub">Reasoning trace stream</text>
+
+  <rect x="400" y="124" width="280" height="116" class="card"/>
+  <text x="420" y="160" class="h2">FastAPI Gateway</text>
+  <text x="420" y="184" class="sub">REST + WebSocket + SSE</text>
+  <text x="420" y="206" class="sub">Auth, routing, validation</text>
+
+  <rect x="742" y="116" width="574" height="360" class="group"/>
+  <text x="766" y="149" class="h2">LangGraph Agent Pipeline</text>
+
+  <rect x="766" y="170" width="246" height="74" class="card"/>
+  <text x="784" y="198" class="txt">1. Context Gatherer</text>
+  <text x="784" y="219" class="sub">segments + behavioral alerts</text>
+
+  <rect x="1038" y="170" width="246" height="74" class="card"/>
+  <text x="1056" y="198" class="txt">2. Reasoning Node</text>
+  <text x="1056" y="219" class="sub">LLM + top-k campaign retrieval</text>
+
+  <rect x="766" y="268" width="246" height="74" class="card"/>
+  <text x="784" y="296" class="txt">3. Proposal Generator</text>
+  <text x="784" y="317" class="sub">structured campaign payload</text>
+
+  <rect x="1038" y="268" width="246" height="74" class="card"/>
+  <text x="1056" y="296" class="txt">4. ROI Estimator</text>
+  <text x="1056" y="317" class="sub">expected return + cost signal</text>
+
+  <rect x="766" y="366" width="246" height="74" class="card"/>
+  <text x="784" y="394" class="txt">5. Confidence Scorer</text>
+  <text x="784" y="415" class="sub">decision confidence output</text>
+
+  <rect x="1038" y="366" width="246" height="74" class="card"/>
+  <text x="1056" y="394" class="txt">6. Human Approval Gate</text>
+  <text x="1056" y="415" class="sub">auto-route or review queue</text>
+
+  <rect x="84" y="300" width="280" height="156" class="card"/>
+  <text x="104" y="333" class="h2">Data + ML Layer</text>
+  <text x="104" y="358" class="sub">Supabase PostgreSQL</text>
+  <text x="104" y="380" class="sub">pgvector similarity index</text>
+  <text x="104" y="402" class="sub">RFM + KMeans segmentation</text>
+  <text x="104" y="424" class="sub">segment profiles and actions</text>
+
+  <rect x="400" y="298" width="280" height="158" class="card"/>
+  <text x="420" y="333" class="h2">Async Processing</text>
+  <text x="420" y="358" class="sub">Celery workers + beat scheduler</text>
+  <text x="420" y="380" class="sub">Re-segment: every 2 hours</text>
+  <text x="420" y="402" class="sub">Alert scan: every 5 minutes</text>
+  <text x="420" y="424" class="sub">Model retrain: daily at 3:00</text>
+
+  <rect x="84" y="520" width="596" height="132" class="card"/>
+  <text x="104" y="554" class="h2">Realtime Delivery</text>
+  <text x="104" y="579" class="sub">WebSocket channels: proposals, alerts, transactions, KPI</text>
+  <text x="104" y="601" class="sub">SSE stream: node-by-node reasoning events</text>
+  <text x="104" y="623" class="sub">Dashboard updates for operators and reviewers</text>
+
+  <rect x="742" y="520" width="574" height="132" class="card"/>
+  <text x="762" y="554" class="h2">Observability</text>
+  <text x="762" y="579" class="sub">Structlog: structured events</text>
+  <text x="762" y="601" class="sub">OpenTelemetry traces -> Jaeger</text>
+  <text x="762" y="623" class="sub">Prometheus metrics -> Grafana dashboards</text>
+
+  <rect x="84" y="686" width="1232" height="102" class="card"/>
+  <text x="104" y="720" class="h2">Outputs</text>
+  <text x="104" y="744" class="sub">Campaign proposals with ROI and confidence, automated or human-approved execution paths, continuously monitored by latency/token/campaign KPIs</text>
+
+  <path class="edge" d="M334 180 L400 180"/>
+  <path class="edge" d="M680 180 L742 180"/>
+  <path class="edge2" d="M540 240 L540 298"/>
+  <path class="edge2" d="M334 356 L400 356"/>
+  <path class="edge2" d="M364 356 L742 356"/>
+  <path class="edge2" d="M364 404 L742 404"/>
+  <path class="edge" d="M1012 206 L1038 206"/>
+  <path class="edge" d="M1160 244 L1160 268"/>
+  <path class="edge" d="M1038 306 L1012 306"/>
+  <path class="edge" d="M1012 343 L1012 366"/>
+  <path class="edge" d="M540 456 L540 520"/>
+  <path class="edge" d="M1030 476 L1030 520"/>
+  <path class="edge2" d="M220 652 L220 686"/>
+  <path class="edge2" d="M1020 652 L1020 686"/>
+  <path class="edge2" d="M1284 420 C1340 420 1340 200 680 200"/>
+
+  <text x="1180" y="190" class="sub">Confidence policy</text>
+  <text x="1180" y="210" class="sub">&gt; 0.85 auto-propose</text>
+</svg>

@@ -132,7 +132,7 @@ export default function HallucinationAwareLLM() {
             <h3 className="text-white font-semibold mb-2">2️⃣ Prompt-Level Generation Constraints</h3>
             <p className="text-gray-400 text-sm">
               Strict instructions in system prompt: Answer ONLY using provided context, do NOT use prior 
-              knowledge, if answer not in context respond exactly: "Not found in retrieved documents"
+              knowledge, if answer not in context respond exactly: &quot;Not found in retrieved documents&quot;
             </p>
           </div>
 
@@ -175,11 +175,11 @@ export default function HallucinationAwareLLM() {
           <h3 className="text-white font-semibold mb-3">Live API Testing Examples</h3>
           <div className="space-y-2 text-sm font-mono">
             <div className="flex justify-between items-start gap-4">
-              <span className="text-gray-400">"What is the rate limit?"</span>
+              <span className="text-gray-400">&quot;What is the rate limit?&quot;</span>
               <span className="text-green-400">✅ 20-50ms</span>
             </div>
             <div className="flex justify-between items-start gap-4">
-              <span className="text-gray-400">"What encryption is used?"</span>
+              <span className="text-gray-400">&quot;What encryption is used?&quot;</span>
               <span className="text-green-400">✅ 20-50ms</span>
             </div>
           </div>
@@ -289,7 +289,7 @@ export default function HallucinationAwareLLM() {
             <span className="text-gray-400 text-sm">Fine-tuned domain-specific embedder</span>
           </div>
           <div className="flex gap-2 items-start">
-            <span className="text-gray-400 text-sm">Explicit "not in corpus" detection</span>
+            <span className="text-gray-400 text-sm">Explicit &quot;not in corpus&quot; detection</span>
           </div>
           <div className="flex gap-2 items-start">
             <span className="text-gray-400 text-sm">Confidence scoring per answer</span>
