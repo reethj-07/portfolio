@@ -40,8 +40,8 @@ export default function RagRetrievalBenchmarkPage() {
           description="Corpus indexing, dual retrieval strategies, and benchmark reporting."
         />
         <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-4 text-sm text-gray-300">
-          <div className="font-mono">Corpus -> Embeddings -> FAISS Vector Store</div>
-          <div className="font-mono">Query -> Raw Vector Search or Query Expansion -> Retrieval -> Benchmark</div>
+          <div className="font-mono">Corpus &rarr; Embeddings &rarr; FAISS Vector Store</div>
+          <div className="font-mono">Query &rarr; Raw Vector Search or Query Expansion &rarr; Retrieval &rarr; Benchmark</div>
         </div>
       </Section>
 
