@@ -1,6 +1,7 @@
 import ProjectLayout from "@/components/ProjectLayout";
 import Section from "@/components/Section";
 import SkillBadge from "@/components/SkillBadge";
+import Diagram from "@/components/Diagram";
 
 export default function SecurityMLOpsPage() {
   return (
@@ -109,6 +110,12 @@ export default function SecurityMLOpsPage() {
 
       {/* Technical Architecture */}
       <Section title="System Architecture">
+        <Diagram
+          src="/diagrams/autonomous-security-mlops-architecture.svg"
+          alt="Autonomous Security MLOps architecture diagram"
+          title="Architecture Diagram"
+          description="Ingestion, feature engineering, model training, and production monitoring."
+        />
         <div className="space-y-4">
           <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-6">
             <h3 className="text-white font-semibold mb-3">Data Pipeline</h3>

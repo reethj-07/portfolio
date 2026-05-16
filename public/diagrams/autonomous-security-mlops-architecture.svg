@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="Autonomous security MLOps architecture diagram">
+  <defs>
+    <style>
+      .bg { fill: #0b0f1a; }
+      .panel { fill: #111827; stroke: #2b3445; stroke-width: 2; }
+      .header { font: 600 20px "Segoe UI", Arial, sans-serif; fill: #f8fafc; }
+      .title { font: 600 16px "Segoe UI", Arial, sans-serif; fill: #e5e7eb; }
+      .subtitle { font: 400 12px "Segoe UI", Arial, sans-serif; fill: #94a3b8; }
+      .arrow { stroke: #38bdf8; stroke-width: 2.5; fill: none; marker-end: url(#arrow); }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#38bdf8" />
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1200" height="700" rx="24" ry="24" />
+  <text class="header" x="60" y="50">Autonomous Security MLOps Architecture</text>
+
+  <rect class="panel" x="60" y="80" width="220" height="90" rx="16" ry="16" />
+  <text class="title" x="80" y="115">Security Logs</text>
+  <text class="subtitle" x="80" y="138">Ingest and validate</text>
+
+  <rect class="panel" x="320" y="80" width="220" height="90" rx="16" ry="16" />
+  <text class="title" x="340" y="115">Feature Engineering</text>
+  <text class="subtitle" x="340" y="138">50+ engineered features</text>
+
+  <rect class="panel" x="580" y="80" width="220" height="90" rx="16" ry="16" />
+  <text class="title" x="600" y="115">Model Training</text>
+  <text class="subtitle" x="600" y="138">MLflow tracking</text>
+
+  <rect class="panel" x="840" y="80" width="220" height="90" rx="16" ry="16" />
+  <text class="title" x="860" y="115">Model Registry</text>
+  <text class="subtitle" x="860" y="138">Canary evaluation</text>
+
+  <rect class="panel" x="840" y="210" width="220" height="90" rx="16" ry="16" />
+  <text class="title" x="860" y="245">FastAPI Inference</text>
+  <text class="subtitle" x="860" y="268">Rate limits and auth</text>
+
+  <rect class="panel" x="580" y="210" width="220" height="90" rx="16" ry="16" />
+  <text class="title" x="600" y="245">Monitoring</text>
+  <text class="subtitle" x="600" y="268">Prometheus and Grafana</text>
+
+  <rect class="panel" x="320" y="210" width="220" height="90" rx="16" ry="16" />
+  <text class="title" x="340" y="245">Orchestration</text>
+  <text class="subtitle" x="340" y="268">Airflow and Kubernetes</text>
+
+  <rect class="panel" x="60" y="210" width="220" height="90" rx="16" ry="16" />
+  <text class="title" x="80" y="245">Data Store</text>
+  <text class="subtitle" x="80" y="268">Postgres and DVC</text>
+
+  <line class="arrow" x1="280" y1="125" x2="320" y2="125" />
+  <line class="arrow" x1="540" y1="125" x2="580" y2="125" />
+  <line class="arrow" x1="800" y1="125" x2="840" y2="125" />
+  <line class="arrow" x1="950" y1="170" x2="950" y2="210" />
+  <line class="arrow" x1="690" y1="170" x2="690" y2="210" />
+  <line class="arrow" x1="430" y1="210" x2="430" y2="170" />
+  <line class="arrow" x1="170" y1="210" x2="580" y2="125" />
+</svg>

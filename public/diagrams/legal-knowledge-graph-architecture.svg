@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="Legal knowledge graph architecture diagram">
+  <defs>
+    <style>
+      .bg { fill: #0b0f1a; }
+      .panel { fill: #111827; stroke: #2b3445; stroke-width: 2; }
+      .header { font: 600 20px "Segoe UI", Arial, sans-serif; fill: #f8fafc; }
+      .title { font: 600 16px "Segoe UI", Arial, sans-serif; fill: #e5e7eb; }
+      .subtitle { font: 400 12px "Segoe UI", Arial, sans-serif; fill: #94a3b8; }
+      .arrow { stroke: #38bdf8; stroke-width: 2.5; fill: none; marker-end: url(#arrow); }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#38bdf8" />
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1200" height="700" rx="24" ry="24" />
+  <text class="header" x="60" y="50">Legal Knowledge Graph Architecture</text>
+
+  <rect class="panel" x="60" y="80" width="200" height="90" rx="16" ry="16" />
+  <text class="title" x="80" y="115">Legal PDFs</text>
+  <text class="subtitle" x="80" y="138">Acts and rules</text>
+
+  <rect class="panel" x="300" y="80" width="200" height="90" rx="16" ry="16" />
+  <text class="title" x="320" y="115">Parser</text>
+  <text class="subtitle" x="320" y="138">Regex and LLM</text>
+
+  <rect class="panel" x="540" y="80" width="200" height="90" rx="16" ry="16" />
+  <text class="title" x="560" y="115">Structured JSON</text>
+  <text class="subtitle" x="560" y="138">Sections and rules</text>
+
+  <rect class="panel" x="780" y="80" width="200" height="90" rx="16" ry="16" />
+  <text class="title" x="800" y="115">Neo4j Graph</text>
+  <text class="subtitle" x="800" y="138">Nodes and edges</text>
+
+  <rect class="panel" x="300" y="240" width="260" height="100" rx="16" ry="16" />
+  <text class="title" x="320" y="275">Text-to-Cypher</text>
+  <text class="subtitle" x="320" y="298">Intent, validate, enrich</text>
+
+  <rect class="panel" x="620" y="240" width="260" height="100" rx="16" ry="16" />
+  <text class="title" x="640" y="275">API and Streamlit</text>
+  <text class="subtitle" x="640" y="298">Grounded responses</text>
+
+  <rect class="panel" x="920" y="240" width="200" height="100" rx="16" ry="16" />
+  <text class="title" x="940" y="275">Users</text>
+  <text class="subtitle" x="940" y="298">Legal queries</text>
+
+  <line class="arrow" x1="260" y1="125" x2="300" y2="125" />
+  <line class="arrow" x1="500" y1="125" x2="540" y2="125" />
+  <line class="arrow" x1="740" y1="125" x2="780" y2="125" />
+  <line class="arrow" x1="880" y1="170" x2="430" y2="240" />
+  <line class="arrow" x1="560" y1="290" x2="620" y2="290" />
+  <line class="arrow" x1="880" y1="290" x2="920" y2="290" />
+</svg>

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="RAG retrieval benchmark architecture diagram">
+  <defs>
+    <style>
+      .bg { fill: #0b0f1a; }
+      .panel { fill: #111827; stroke: #2b3445; stroke-width: 2; }
+      .header { font: 600 20px "Segoe UI", Arial, sans-serif; fill: #f8fafc; }
+      .title { font: 600 16px "Segoe UI", Arial, sans-serif; fill: #e5e7eb; }
+      .subtitle { font: 400 12px "Segoe UI", Arial, sans-serif; fill: #94a3b8; }
+      .arrow { stroke: #38bdf8; stroke-width: 2.5; fill: none; marker-end: url(#arrow); }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#38bdf8" />
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1200" height="700" rx="24" ry="24" />
+  <text class="header" x="60" y="50">Context-Aware Retrieval Benchmark Architecture</text>
+
+  <rect class="panel" x="60" y="80" width="220" height="90" rx="16" ry="16" />
+  <text class="title" x="80" y="115">Corpus</text>
+  <text class="subtitle" x="80" y="138">10 technical docs</text>
+
+  <rect class="panel" x="320" y="80" width="220" height="90" rx="16" ry="16" />
+  <text class="title" x="340" y="115">Embeddings</text>
+  <text class="subtitle" x="340" y="138">SentenceTransformers</text>
+
+  <rect class="panel" x="580" y="80" width="220" height="90" rx="16" ry="16" />
+  <text class="title" x="600" y="115">FAISS Index</text>
+  <text class="subtitle" x="600" y="138">Cosine similarity</text>
+
+  <rect class="panel" x="60" y="240" width="220" height="90" rx="16" ry="16" />
+  <text class="title" x="80" y="275">Query</text>
+  <text class="subtitle" x="80" y="298">Benchmark inputs</text>
+
+  <rect class="panel" x="320" y="240" width="220" height="90" rx="16" ry="16" />
+  <text class="title" x="340" y="275">Strategy A</text>
+  <text class="subtitle" x="340" y="298">Raw vector search</text>
+
+  <rect class="panel" x="580" y="240" width="220" height="90" rx="16" ry="16" />
+  <text class="title" x="600" y="275">Strategy B</text>
+  <text class="subtitle" x="600" y="298">Query expansion</text>
+
+  <rect class="panel" x="840" y="140" width="260" height="120" rx="16" ry="16" />
+  <text class="title" x="860" y="180">Benchmark Runner</text>
+  <text class="subtitle" x="860" y="202">MRR, nDCG, MAP</text>
+  <text class="subtitle" x="860" y="222">Latency tradeoffs</text>
+
+  <rect class="panel" x="840" y="300" width="260" height="90" rx="16" ry="16" />
+  <text class="title" x="860" y="335">Reports</text>
+  <text class="subtitle" x="860" y="358">Markdown and JSON</text>
+
+  <line class="arrow" x1="280" y1="125" x2="320" y2="125" />
+  <line class="arrow" x1="540" y1="125" x2="580" y2="125" />
+  <line class="arrow" x1="280" y1="275" x2="320" y2="275" />
+  <line class="arrow" x1="280" y1="275" x2="580" y2="275" />
+  <line class="arrow" x1="540" y1="275" x2="840" y2="200" />
+  <line class="arrow" x1="800" y1="125" x2="840" y2="200" />
+  <line class="arrow" x1="970" y1="260" x2="970" y2="300" />
+</svg>

@@ -286,6 +286,41 @@ export default function Home() {
             <div className="grid gap-6 md:grid-cols-2">
 
               <ProjectCard
+                title="Hiring Engagement Agent"
+                description="AI-powered hiring pipeline with nine LangGraph agents, pgvector retrieval, and live SSE trace streaming from JD intake to ranked shortlist."
+                tech={["LangGraph", "FastAPI", "Gemini 2.5", "pgvector", "Supabase", "Next.js"]}
+                href="/projects/hiring-engagement-agent"
+              />
+
+              <ProjectCard
+                title="Big Data Q&A Agent System"
+                description="Multi-agent analytics over 150K Amazon reviews with FAISS + BM25 + DuckDB hybrid retrieval and Gemini/Groq routing."
+                tech={["LangGraph", "FAISS", "BM25", "DuckDB", "Gemini", "Groq"]}
+                href="/projects/large-ds-qna"
+              />
+
+              <ProjectCard
+                title="Legal Knowledge Graph"
+                description="Neo4j knowledge graph for Companies Act 2013 and amendments with text-to-Cypher QA and Streamlit UI."
+                tech={["Neo4j", "Cypher", "FastAPI", "Streamlit", "Gemini"]}
+                href="/projects/legal-knowledge-graph"
+              />
+
+              <ProjectCard
+                title="Multi-Agent Trade Validator"
+                description="Three-stage trade document pipeline for extraction, validation, and routing with FastAPI and optional Streamlit UI."
+                tech={["LangGraph", "FastAPI", "Gemini 2.5", "SQLModel", "Streamlit"]}
+                href="/projects/multi-agent-trade-validator"
+              />
+
+              <ProjectCard
+                title="Context-Aware Retrieval Engine"
+                description="RAG benchmark comparing raw vector search vs query-expanded retrieval with full metric reporting."
+                tech={["RAG", "FAISS", "TF-IDF", "Benchmarking", "Pytest"]}
+                href="/projects/rag-retrieval-benchmark"
+              />
+
+              <ProjectCard
                 title="AI Loyalty Service"
                 description="Agentic AI platform for real-time loyalty operations with LangGraph pipeline orchestration, RFM + KMeans segmentation, pgvector retrieval, and streaming reasoning traces."
                 tech={["LangGraph", "FastAPI", "Celery", "Redis", "pgvector", "OpenTelemetry"]}
@@ -503,7 +538,7 @@ export default function Home() {
 
             <div className="flex flex-col sm:flex-row justify-center gap-4 pt-4">
               <a
-                href="/AIML_latest.pdf"
+                href="/ReethJain_AIMLE.pdf"
                 download
                 className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 
                            hover:from-blue-500 hover:to-blue-600 rounded-lg
