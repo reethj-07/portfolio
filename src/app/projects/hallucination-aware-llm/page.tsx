@@ -6,6 +6,7 @@ import SkillBadge from "@/components/SkillBadge";
 export default function HallucinationAwareLLM() {
   return (
     <ProjectLayout
+      slug="hallucination-aware-llm"
       title="Hallucination-Aware Hybrid LLM System"
       subtitle="Production-Grade RAG with Phi-3 and FAISS Retrieval"
       github="https://github.com/reethj-07/hallucination-aware-hybrid-llm"

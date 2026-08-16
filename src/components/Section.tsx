@@ -11,8 +11,8 @@ const fadeUp: Variants = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.5,
-      ease: [0.16, 1, 0.3, 1], // ✅ valid easing
+      duration: 0.6,
+      ease: [0.16, 1, 0.3, 1],
     },
   },
 };
@@ -25,23 +25,22 @@ export default function Section({
   children: React.ReactNode;
 }) {
   return (
-  <motion.section
-    variants={fadeUp}
-    initial="hidden"
-    whileInView="visible"
-    viewport={{ once: true, margin: "-80px" }}
-    className="space-y-6"
-  >
-    {title && (
-      <h2 className="text-xl md:text-2xl font-semibold tracking-tight
-                     border-b border-gray-800 pb-3">
-        {title}
-      </h2>
-    )}
+    <motion.section
+      variants={fadeUp}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: "-80px" }}
+      className="space-y-6"
+    >
+      {title && (
+        <h2 className="border-b border-[var(--line)] pb-3 text-xl font-semibold tracking-tight text-[var(--fg)] md:text-2xl">
+          {title}
+        </h2>
+      )}
 
-    <div className="text-gray-400 text-sm leading-relaxed">
-      {children}
-    </div>
-  </motion.section>
-);
+      <div className="text-sm leading-relaxed text-[var(--fg-subtle)]">
+        {children}
+      </div>
+    </motion.section>
+  );
 }

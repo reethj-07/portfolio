@@ -6,6 +6,7 @@ import Diagram from "@/components/Diagram";
 export default function AILoyaltyServicePage() {
   return (
     <ProjectLayout
+      slug="ai-loyalty-service"
       title="AI Loyalty Service"
       subtitle="Agentic AI platform for real-time customer loyalty operations"
       github="https://github.com/reethj-07/ai-loyalty-service"

@@ -6,6 +6,7 @@ import Diagram from "@/components/Diagram";
 export default function LargeDSQnaPage() {
   return (
     <ProjectLayout
+      slug="large-ds-qna"
       title="Big Data Q&A Agent System"
       subtitle="Multi-agent analytics over 150K Amazon reviews"
       github="https://github.com/reethj-07/LargeDS_QnA"

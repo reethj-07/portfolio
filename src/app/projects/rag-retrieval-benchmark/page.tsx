@@ -6,6 +6,7 @@ import Diagram from "@/components/Diagram";
 export default function RagRetrievalBenchmarkPage() {
   return (
     <ProjectLayout
+      slug="rag-retrieval-benchmark"
       title="Context-Aware Retrieval Engine"
       subtitle="RAG retrieval benchmark with query expansion and evaluation metrics"
       github="https://github.com/reethj-07/rag-retrieval-benchmark"

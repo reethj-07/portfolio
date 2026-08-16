@@ -1,8 +1,9 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
+import Reveal from "./Reveal";
 
+/** Kept as a thin alias so existing case-study pages keep working. */
 export default function FadeIn({
   children,
   delay = 0,
@@ -10,18 +11,5 @@ export default function FadeIn({
   children: ReactNode;
   delay?: number;
 }) {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 24 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{
-        duration: 0.6,
-        ease: "easeOut",
-        delay,
-      }}
-    >
-      {children}
-    </motion.div>
-  );
+  return <Reveal delay={delay}>{children}</Reveal>;
 }

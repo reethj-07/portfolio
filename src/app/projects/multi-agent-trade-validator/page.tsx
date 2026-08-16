@@ -6,6 +6,7 @@ import Diagram from "@/components/Diagram";
 export default function MultiAgentTradeValidatorPage() {
   return (
     <ProjectLayout
+      slug="multi-agent-trade-validator"
       title="Multi-Agent Trade Validator"
       subtitle="Trade document extraction, validation, and routing with LangGraph"
       github="https://github.com/reethj-07/Multi-Agent-Trade-Validator"

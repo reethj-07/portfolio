@@ -6,6 +6,7 @@ import Diagram from "@/components/Diagram";
 export default function SecurityMLOpsPage() {
   return (
     <ProjectLayout
+      slug="autonomous-security-mlops"
       title="Autonomous Security MLOps Platform"
       subtitle="Enterprise-grade MLOps + AI-powered Security Inference System"
       github="https://github.com/reethj-07/autonomous-security-mlops"

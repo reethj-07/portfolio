@@ -6,6 +6,7 @@ import Diagram from "@/components/Diagram";
 export default function EmotionMusicRecommender() {
   return (
     <ProjectLayout
+      slug="emotion-music-recommender"
       title="VibeTune: Multi-Modal Emotion-Based Music Recommender"
       subtitle="Production-ready emotion detection with real-time Spotify integration"
       github="https://github.com/reeth-07/emotion-music-recommender"

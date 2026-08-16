@@ -6,6 +6,7 @@ import Diagram from "@/components/Diagram";
 export default function LegalKnowledgeGraphPage() {
   return (
     <ProjectLayout
+      slug="legal-knowledge-graph"
       title="Legal Knowledge Graph"
       subtitle="Neo4j knowledge graph with text-to-Cypher legal QA"
       github="https://github.com/reethj-07/legal-knowledge-graph"

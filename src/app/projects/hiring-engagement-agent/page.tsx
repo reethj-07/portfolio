@@ -6,6 +6,7 @@ import Diagram from "@/components/Diagram";
 export default function HiringEngagementAgentPage() {
   return (
     <ProjectLayout
+      slug="hiring-engagement-agent"
       title="Hiring Engagement Agent"
       subtitle="AI-powered talent scouting and engagement pipeline"
       github="https://github.com/reethj-07/hiring-engagement-agent"

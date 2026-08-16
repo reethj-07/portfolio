@@ -21,33 +21,31 @@ export default function Diagram({
       initial={{ opacity: 0, y: 16 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.5 }}
-      className="my-16 rounded-2xl border border-gray-800
-                 bg-gradient-to-b from-zinc-900 to-black
-                 p-6 shadow-lg"
+      transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+      className="my-16 rounded-[var(--radius-lg)] border border-[var(--line)] bg-[var(--bg-elevated)] p-6 shadow-[var(--shadow-lift)]"
     >
       {(title || description) && (
         <div className="mb-4 space-y-1">
           {title && (
-            <h3 className="text-sm font-semibold uppercase tracking-wide text-gray-300">
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-[var(--fg-muted)]">
               {title}
             </h3>
           )}
           {description && (
-            <p className="text-xs text-gray-500 max-w-2xl">
+            <p className="max-w-2xl text-xs text-[var(--fg-faint)]">
               {description}
             </p>
           )}
         </div>
       )}
 
-      <div className="rounded-xl border border-gray-700 bg-black p-2">
+      <div className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--bg-sunken)] p-2">
         <Image
           src={src}
           alt={alt}
           width={1200}
           height={700}
-          className="rounded-lg"
+          className="rounded-[calc(var(--radius)-4px)]"
         />
       </div>
     </motion.div>
